@@ -1,3 +1,4 @@
+from tkinter import BROWSE
 import streamlit as st
 import math
 import decimal
@@ -39,7 +40,6 @@ def format_num(num: Decimal) -> str:
     if num[-1] == '.':
         num = num[:-1]
     return num
-
 
 DEFAULT_VALUE = 0
 with st.form("Fancy calc"):

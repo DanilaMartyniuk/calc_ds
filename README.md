@@ -1,6 +1,6 @@
-# Calculator lab
+# hello-dock
+Repo for experiments to run streamlit==1.11.0 inside docker container
 
-* install python3
-* (help link to manage venv https://docs.python.org/3/tutorial/venv.html)
-* install streamlit for gui (command: pip install streamlit)
-* run code by typing: streamlit run main.py
+Build container: `docker build . -t calc:latest`
+
+Run container: `docker run -p 8501:8501 calc:latest`
